@@ -71,6 +71,9 @@ a:hover { color: var(--hook); }
 }
 .hero .lede { font-size: clamp(1.1rem, 1.6vw, 1.25rem); color: var(--ink-soft); max-width: 36ch; margin: 0 0 2rem; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: .8rem; }
+.hero-solo .wrap { grid-template-columns: minmax(0, 1fr); }
+.hero-solo h1 { max-width: 19ch; }
+.hero-solo .lede { max-width: 46ch; }
 .hero .fineprint { margin: 1.4rem 0 0; font-size: .925rem; color: var(--ink-soft); }
 
 .triptych { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.6rem, 1.4vw, 1.1rem); align-items: start; }
