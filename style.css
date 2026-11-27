@@ -98,6 +98,12 @@ a:hover { color: var(--hook); }
 .frame .play:hover span { background: #fff; color: var(--hook); }
 .variant figcaption { margin-top: .7rem; font-size: .9rem; line-height: 1.35; color: var(--ink-soft); }
 .variant figcaption b { display: block; color: var(--ink); font-weight: 700; }
+.feature { margin: 0; width: min(100%, 330px); justify-self: center; }
+.feature figcaption, .samples figcaption { margin-top: .75rem; font-size: .9rem; line-height: 1.4; color: var(--ink-soft); }
+.feature figcaption b, .samples figcaption b { display: block; color: var(--ink); font-weight: 700; }
+.samples { display: grid; grid-template-columns: minmax(0, 1fr) repeat(2, minmax(0, 230px)); gap: clamp(1.2rem, 3vw, 2.5rem); align-items: start; margin-top: clamp(3rem, 6vw, 4.5rem); }
+.samples-head p { color: var(--ink-soft); max-width: 38ch; margin: 0; }
+.samples .variant:nth-child(n) { margin-top: 0; }
 .tag-hook { display: inline-block; width: .7rem; height: .7rem; border-radius: 3px; background: var(--hook); margin-right: .35rem; vertical-align: -1px; }
 
 /* Sections */
@@ -190,6 +196,9 @@ h3 { font-size: 1.2rem; line-height: 1.25; letter-spacing: -0.01em; margin: 0 0 
   .nav a:not(.btn) { display: none; }
   .variant:nth-child(2) { margin-top: 1.2rem; }
   .variant:nth-child(3) { margin-top: 2.4rem; }
+  .feature { width: min(100%, 300px); }
+  .samples { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .samples-head { grid-column: 1 / -1; }
 }
 @media (max-width: 560px) {
   body { font-size: 1rem; }
@@ -201,5 +210,6 @@ h3 { font-size: 1.2rem; line-height: 1.25; letter-spacing: -0.01em; margin: 0 0 
   .tl-ticks { font-size: .7rem; }
   .frame .play span { font-size: .72rem; padding: .35rem .55rem; }
   .variant figcaption { font-size: .78rem; }
+  .samples figcaption { font-size: .8rem; }
   .wordmark span { display: none; }
 }
